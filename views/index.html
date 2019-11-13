@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thermostat</title>
+    <script src="../src/Thermostat.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../src/Interface.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="button-container">
+        <button id="temp-up" class="temp">Increase Temp</button>
+        <button id="temp-reset" class="temp">Reset Temp</button>
+        <button id="temp-down" class="temp">Decrease Temp</button>
+    </div>
+
+    <div id="temp-container">
+        <h2 class="temp-text" id="temperature"></h2>
+    </div>
+
+    <div class="container">
+        <h2 class="PSM-title">Power saving mode is <span id="power-saving-status">on</span></h2>
+        <div class="PSM-button-container">
+            <button id="PSM-on" class="PSM-button">PSM on</button>
+            <button id="PSM-off" class="PSM-button">PSM off</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="PSM-title">Current temperature: <span id="current-temperature"></span></h2>
+        <select id="current-city">
+            <option value="london">London</option>
+            <option value="newyork">New York</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+        </select>
+    </div>
+</body>
+</html>
